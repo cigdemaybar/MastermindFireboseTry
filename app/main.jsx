@@ -10,7 +10,11 @@ import Home from './components/Home'
 import firebase from 'APP/fire'
 
 // -- // Demo components // -- //
+
 // import Scratchpad from 'APP/demos/scratchpad'
+
+import Whiteboard from 'APP/demos/whiteboard'
+
 
 // Get the auth API from Firebase.
 const auth = firebase.auth()
@@ -59,6 +63,7 @@ render(
       <IndexRedirect to="home"/>
       { /* <Route path="scratchpad/:title" component={Scratchpad}/> */}
       <Route path="home" component={Home}/>
+      <Route path="whiteboard/:title" component={Whiteboard}/>
     </Route>
     <Route path='*' component={NotFound}/>
   </Router>,
