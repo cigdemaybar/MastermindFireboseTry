@@ -57,7 +57,7 @@ render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRedirect to="home"/>
-      {/*<Route path="scratchpad/:title" component={Scratchpad}/>*/}
+      { /* <Route path="scratchpad/:title" component={Scratchpad}/> */}
       <Route path="home" component={Home}/>
     </Route>
     <Route path='*' component={NotFound}/>
