@@ -5,11 +5,12 @@ import {render} from 'react-dom'
 
 import WhoAmI from './components/WhoAmI'
 import NotFound from './components/NotFound'
+import Home from './components/Home'
 
 import firebase from 'APP/fire'
 
 // -- // Demo components // -- //
-import Scratchpad from 'APP/demos/scratchpad'
+// import Scratchpad from 'APP/demos/scratchpad'
 
 // Get the auth API from Firebase.
 const auth = firebase.auth()
@@ -55,8 +56,9 @@ const App = ({children}) =>
 render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <IndexRedirect to="scratchpad/welcome"/>
-      <Route path="scratchpad/:title" component={Scratchpad}/>
+      <IndexRedirect to="home"/>
+      {/*<Route path="scratchpad/:title" component={Scratchpad}/>*/}
+      <Route path="home" component={Home}/>
     </Route>
     <Route path='*' component={NotFound}/>
   </Router>,

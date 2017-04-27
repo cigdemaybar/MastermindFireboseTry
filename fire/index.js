@@ -2,12 +2,12 @@ const firebase = require('firebase')
 
 // -- // -- // -- // Firebase Config // -- // -- // -- //
 const config = {
-  apiKey: 'AIzaSyBzz-Wq2dzMgM7E8cdSYnYoX5fbVUT-XQo',
-  authDomain: 'firebones-6bc2a.firebaseapp.com',
-  databaseURL: 'https://firebones-6bc2a.firebaseio.com',
-  projectId: 'firebones-6bc2a',
-  storageBucket: 'firebones-6bc2a.appspot.com',
-  messagingSenderId: '1030378391678'
+  apiKey: 'AIzaSyAijUtA3VW4C-Wqv5XfVPD6rkgAZIL_J6Y',
+  authDomain: 'mastermind-d9756.firebaseapp.com',
+  databaseURL: 'https://mastermind-d9756.firebaseio.com',
+  projectId: 'mastermind-d9756',
+  storageBucket: 'mastermind-d9756.appspot.com',
+  messagingSenderId: '419664501247'
 }
 // -- // -- // -- // -- // -- // -- // -- // -- // -- //
 
