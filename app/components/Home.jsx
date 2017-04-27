@@ -18,17 +18,17 @@ export default class extends React.Component {
     this.listenTo(incoming.fireRef)
   }
 
-  listenTo(fireRef) {
-    // If we're already listening to a ref, stop listening there.
-    if (this.unsubscribe) this.unsubscribe()
+  // listenTo(fireRef) {
+  //   // If we're already listening to a ref, stop listening there.
+  //   if (this.unsubscribe) this.unsubscribe()
 
-    // Whenever our ref's value changes, set {value} on our state.
-    const listener = fireRef.on('value', snapshot =>
-      this.setState({value: snapshot.val()}))
+  //   // Whenever our ref's value changes, set {value} on our state.
+  //   const listener = fireRef.on('value', snapshot =>
+  //     this.setState({value: snapshot.val()}))
 
-    // Set unsubscribe to be a function that detaches the listener.
-    this.unsubscribe = () => fireRef.off('value', listener)
-  }
+  //   // Set unsubscribe to be a function that detaches the listener.
+  //   this.unsubscribe = () => fireRef.off('value', listener)
+  // }
 
   // Write is defined using the class property syntax.
   // This is roughly equivalent to saying,

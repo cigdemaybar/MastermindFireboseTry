@@ -21,8 +21,7 @@
     "test-watch": "npm run test -- --watch --reporter=min",
     "seed": "node db/seed.js",
     "lint": "esw . --ignore-path .gitignore --ext '.js,.jsx'",
-    "lint-watch": "npm run lint -- -w",
-    "prepush": "npm run lint && npm run test"
+    "lint-watch": "npm run lint -- -w"
   },
   "repository": {
     "type": "git",
